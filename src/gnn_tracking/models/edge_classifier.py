@@ -9,6 +9,7 @@ from gnn_tracking.models.interaction_network import InteractionNetwork as IN
 from gnn_tracking.models.mlp import MLP
 from gnn_tracking.models.resin import ResIN
 
+from gnn_tracking.utils.symmetrize_edge_weights import symmetrize_edge_weights
 
 class EdgeClassifier(nn.Module):
     def __init__(
